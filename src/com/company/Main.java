@@ -69,11 +69,7 @@ public class Main {
 
             countMinutes += 5;
         }
-
-        System.out.println(carSet.size());
-        System.out.println(parking.size());
-        for (Car c : parking
-        ) {
+        for (Check c:checkList) {
             System.out.println(c);
         }
     }
