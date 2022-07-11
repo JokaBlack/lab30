@@ -3,14 +3,14 @@ package com.company;
 public enum State {
     IN_DRIVE("in drive"){
         @Override
-        public void replaceState() {
-
+        public State replaceState() {
+            return IN_THE_PARKING;
         }
     },
     IN_THE_PARKING("parking") {
         @Override
-        public void replaceState() {
-
+        public State replaceState() {
+            return IN_DRIVE;
         }
     };
 
@@ -24,5 +24,5 @@ public enum State {
         this.value = value;
     }
 
-    public abstract void replaceState();
+    public abstract State replaceState();
 }
